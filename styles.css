@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111 ;
+}
+.scan{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scan .fingerprint{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background: url("./src/fingerPrint_01.png");
+    background-size: 300px;
+}
+
+.scan .fingerprint::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./src/fingerPrint_02.png");
+    background-size: 300px;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+    }
+}
+
+.scan .fingerprint::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #3fefef;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate_line {
+    0%,100%{
+        top: 0%;
+    }
+    50%{
+        top: 100%;
+    }
+}
+
+.scan h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: -70px;
+    bottom: 0px;
+    margin-left: 20%;
+    color: #3fefef;
+    animation: animate_text 0.5s steps(1);
+}
+@keyframes animate_text{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+
+.scan h6{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: -15%;
+    bottom: 0px;
+    margin-left: 15%;
+    color: #3fefef;
+    animation: animate_load 0.5s steps(1) infinite;
+}
+@keyframes animate_load{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+h6:hover {
+animation-play-state: paused;
+}
+
+
+.name{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    bottom: 0px;
+    /* margin-left: 15%; */
+    color: #3fefef; filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_texts 11s steps(1) infinite;
+}
+@keyframes animate_texts{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+
+.linkedin{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    bottom: 0px;
+    /* margin-left: 15%; */
+    color: #3fefef; filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_texts 12s steps(1) infinite;
+}
+@keyframes animate_texts{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+
+.github{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    bottom: 0px;
+    /* margin-left: 15%; */
+    color: #3fefef; filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_texts 14s steps(1) infinite;
+}
+@keyframes animate_texts{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+.details{
+    border: 1px solid #3fefef;
+    margin-left: 250%;
+    margin-top: -100%; 
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 2px 2px 2px solid #3fefef */
+}
+
+a{
+    color: #3fefef;
+    text-decoration: none;
+}
+
+.stack{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    bottom: 0px;
+    /* margin-left: 15%; */
+    color: #3fefef; filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_texts 15s steps(1) infinite;
+}
+@keyframes animate_texts{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+.stacks{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    bottom: 0px;
+    /* margin-left: 15%; */
+    color: #3fefef; filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+    animation: animate_texts 16s steps(1) infinite;
+}
+@keyframes animate_texts{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
